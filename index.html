@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+<a-scene background="color:gray">
+
+    <a-camera wasd-controls-enabled="false" position="0 8 20"></a-camera>
+
+    <a-assets>
+        <a-asset-item id = "tren_object" src = "models/tinker.obj"></a-asset-item>
+        <a-asset-item id = "tren_mtl" src = "models/obj.mtl"></a-asset-item>
+    </a-assets>
+
+    <a-entity obj-model = "obj : #tren_object; mtl: #tren_mtl" position = "-2 0 0" rotation ="-90 0 0" scale = "0.1 0.1 0.1" ></a-entity>
+
+    <a-entity >
+
+        <!-- Posterior -->
+        <a-box src = "https://th.bing.com/th/id/OIP.NTQ6PrDTHPdQPKOwaSb-BgHaDF?pid=ImgDet&rs=1" position="0.076 -4 -39" width="50" height="50">
+        </a-box>
+        <!-- Derecho -->
+        <a-box src = "https://static.turbosquid.com/Preview/001333/648/YG/Z.jpg" rotation="0 -90 0" position="25.5 -2.9 -15" width="50" height="50">
+        </a-box>
+        <!-- Izquierdo -->
+        <a-box src = "https://th.bing.com/th/id/OIP.ksakBh-7Io6LvNKTm9nzawHaFj?pid=ImgDet&rs=1" rotation="0 -90 0" position="-25.9 -3.4 -15" width="50" height="50">
+        </a-box>
+        <!-- Superior -->
+        <a-box src = "https://static.brusheezy.com/system/resources/previews/000/043/311/original/blue-sky-texture-photoshop-textures.jpg" rotation="90 0 0" position="0 21.4 -15" width="50" height="50">
+        </a-box>
+        <!-- Inferior -->
+        <a-box src = "https://th.bing.com/th/id/R.494af203960d2bc8cc21c604a7e61ae6?rik=5qNQMlUq8IBTZw&riu=http%3a%2f%2ftexturelib.com%2fTextures%2froad%2frails%2froad_rails_0002_01_preview.jpg&ehk=7ivCEMGYnkOx%2fgaJuntS6JuqnlAHrMAIQWNhtg5qaYE%3d&risl=&pid=ImgRaw&r=0" rotation="90 0 0" position="0 -8 -15" width="50" height="50">
+        </a-box>
+  
+      </a-entity>
+
+
+
+
+</a-scene>
+</body>
+
+</html>
